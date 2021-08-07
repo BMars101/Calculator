@@ -1,0 +1,83 @@
+button {
+    font-size: 1.3em;
+    font-weight: bold; 
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.33;
+}
+.container {
+    padding-top: 5px;
+    display: grid;
+    /* border: 1px solid magenta; */
+    background-color: #353333;
+    border-radius: 10px;
+    height: 500px;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.calc-input {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    height: 50px;
+    width: 291px;
+    
+}
+
+.calc-buttons {
+    display: grid;
+    height: 400px;
+    width: 300px;
+    grid-template-rows: repeat(5, minmax(40px, 1fr));
+    grid-template-columns: repeat(4, minmax(40px, 1fr));
+    grid-gap: 0.5em;
+    padding-top: 0.7em;
+    padding-bottom: 0.5em;
+}
+
+.calc-input .prev-number{
+    font-size: 1rem;
+    color: #646D6D;
+}
+.calc-input .current-number{
+    font-size: 2rem;
+    color: #3D4849;
+}
+.operator {
+    color: greenyellow;
+    background-color: #5c5b5b;
+}
+
+.clear-btn, .delete-btn, .equal-btn {
+    color: greenyellow;
+    background-color: #5c5b5b;
+}
+
+.zero-btn{
+    grid-column: 1 / span 2;
+    grid-row: 5;
+   
+}
+
+.equal-btn{
+    grid-row: 4 / span 2;
+    grid-column: 4;
+}
+
+.number {
+    background-color: #bbb8b8;
+    color: #e10098;
+}
+
