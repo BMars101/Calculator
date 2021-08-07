@@ -65,13 +65,13 @@ class Calculator{
         this.prevNum = '';
     }
 
-    //This makes the display of the functions fancier
+    
     getDisplayNumber(num){
-        //This line of code formats the number accurately
         //converts number to string for use of commas
         const stringNumber = num.toString();
-        //if string starts with a decimal, no commas after decimal
+        //if number starts with decimal the convert to float number
         const integerDigits = parseFloat(stringNumber.split('.')[0])
+        //Separates the number before and after decimal for accurate format
         const decimalDigits = stringNumber.split('.')[1]
         let integerDisplay
         if(isNaN(integerDigits)){
