@@ -5,6 +5,7 @@ as well as css grid.
 ## View the project
 Download zip file, open index.html in browser <br>
 OR <br>
-Using the command line: 
+Using the command line: <br>
 Navigate to desired folder to store project
-then type: `git clone https://github.com/BMars101/Calculator.git`
+then type: <br>
+ `git clone https://github.com/BMars101/Calculator.git`
