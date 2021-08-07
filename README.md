@@ -9,3 +9,7 @@ Using the command line: <br>
 Navigate to desired folder to store project
 then type: <br>
  `git clone https://github.com/BMars101/Calculator.git`
+
+#Credits
+
+Functionality created with the help of [Web Dev Simplified](https://www.youtube.com/watch?v=j59qQ7YWLxw)

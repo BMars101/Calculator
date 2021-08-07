@@ -5,25 +5,28 @@ class Calculator{
         this.clear();
     }
     clear(){
-        this.currentNum = '';
+        this.currentNum = 0;
         this.prevNum = '';
         this.operation = undefined;
     }
 
     delete(){
+        //deletes the last character in the input
         this.currentNum = this.currentNum.toString().slice(0, -1);
     }
 
     //Adds number to the input element every time a number is pressed
     //Until an operator is pressed
     appendNumber(num){
+        //checks if a decimal is present and if so prevents additional decimals
         if(num === '.' && this.currentNum.includes('.')) return
+        //Changing to string to avoid pre-mature computation as numbers are being appended
         this.currentNum = this.currentNum.toString() + num.toString();
     }
 
     //Picks the operation based on the operator pressed by user
     chooseOperation(operation){
-        //If operand is selected without numbers, do not execute
+        //If operator is selected without numbers, do not execute
         if(this.currentNum === '') return
         //Check if prevNum exists and then run computation
         if(this.prevNum !== ''){
@@ -62,14 +65,19 @@ class Calculator{
         this.prevNum = '';
     }
 
+    //This makes the display of the functions fancier
     getDisplayNumber(num){
+        //This line of code formats the number accurately
+        //converts number to string for use of commas
         const stringNumber = num.toString();
+        //if string starts with a decimal, no commas after decimal
         const integerDigits = parseFloat(stringNumber.split('.')[0])
         const decimalDigits = stringNumber.split('.')[1]
         let integerDisplay
         if(isNaN(integerDigits)){
             integerDisplay = '';
         }else {
+            //formats number to include appropriate comma to number size
             integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
         }
         if(decimalDigits != null){

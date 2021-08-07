@@ -1,3 +1,7 @@
+body {
+    background-color: #b1388b;
+
+}
 button {
     font-size: 1.3em;
     font-weight: bold; 
@@ -7,17 +11,25 @@ button {
 button:hover{
     opacity: 0.33;
 }
-.container {
-    padding-top: 5px;
+.main-container {
+    padding: 15px;
+    padding-bottom: 25px;
+    margin: 50px auto;
     display: grid;
-    /* border: 1px solid magenta; */
     background-color: #353333;
     border-radius: 10px;
     height: 500px;
     width: 350px;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.calc-container {
+    border-radius: 20px;
+    background-color: #2b2828;
+    padding: 10px;
 }
 .calc-input {
     grid-column: 1 / -1;
@@ -33,6 +45,7 @@ button:hover{
     border: 2px solid black;
     height: 50px;
     width: 291px;
+    font-family: sans-serif;
     
 }
 
@@ -40,6 +53,7 @@ button:hover{
     display: grid;
     height: 400px;
     width: 300px;
+    border: none;
     grid-template-rows: repeat(5, minmax(40px, 1fr));
     grid-template-columns: repeat(4, minmax(40px, 1fr));
     grid-gap: 0.5em;
@@ -56,12 +70,12 @@ button:hover{
     color: #3D4849;
 }
 .operator {
-    color: greenyellow;
+    color: rgb(158, 235, 43);
     background-color: #5c5b5b;
 }
 
 .clear-btn, .delete-btn, .equal-btn {
-    color: greenyellow;
+    color: rgb(158, 235, 43);
     background-color: #5c5b5b;
 }
 
@@ -78,6 +92,6 @@ button:hover{
 
 .number {
     background-color: #bbb8b8;
-    color: #e10098;
+    color: #bd0382;
 }
 
