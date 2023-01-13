@@ -3,7 +3,7 @@ Simple calculator project demonstrating use of a JavaScript class
 as well as css grid.
 
 ## View the project
-Click on gh_pages link to the right in the code repository page <br>
+Click on github_pages link to the right in the code repository page under Environments <br>
 OR <br>
 Download zip file, open index.html in browser <br>
 OR <br>
